@@ -19,7 +19,7 @@ import { useInView } from 'react-intersection-observer';
 import { eventsAPI } from '../utils/api';
 
 // API URL for image paths
-const API_URL = 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 // Custom components for animation
 const MotionBox = motion(Box);
