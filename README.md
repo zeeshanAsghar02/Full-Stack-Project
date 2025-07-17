@@ -22,7 +22,7 @@ The backend is built with Node.js and the Express.js framework, providing a REST
     *   `express-rate-limit`: Limits repeated requests to public APIs to prevent brute-force attacks.
     *   `hpp` (HTTP Parameter Pollution): Protects against parameter pollution attacks.
     *   `cors`: Enables Cross-Origin Resource Sharing.
-*   **Email Service:** SendGrid (via `@sendgrid/mail` package) for sending transactional emails (e.g., email verification, password reset).
+*   **Email Service:** SendGrid (via `@sendgrid/mail` package) for sending transactional emails (e.g., email verification, password reset and we will be moving towards using basic google smtp for this purpose in future).
 *   **Error Handling:** `express-async-handler` for simplifying asynchronous error handling.
 *   **File Uploads:** ImageKit for external image storage and management.
 *   **Environment Variables:** `dotenv` for loading environment variables.
